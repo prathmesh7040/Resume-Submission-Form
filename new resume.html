@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Form</title>
+</head>
+<body>
+
+    <h1>Resume Submission Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Basic Details -->
+        
+           <h3>Basic Information</h3>
+
+            Field Name: <input type="text" name="field" required><br><br>
+
+            Full Name: <input type="text" name="name" required><br><br>
+
+            Email: <input type="email" name="email" required><br><br>
+
+            Phone Number: <input type="tel" name="phone" required><br><br>
+
+            Date of Birth: <input type="date" name="dob" required><br><br>
+
+            Gender:
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other<br><br>
+
+            Marital Status:
+            <select name="marital" required>
+                <option value="">Select</option>
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+            </select><br><br>
+
+            Nationality: <input type="text" name="nationality" required><br><br>
+
+            Address:<br>
+            <textarea name="address" rows="3" cols="40" required></textarea><br><br>
+        
+          <h3>Online Profiles & Uploads</h3>
+
+            LinkedIn URL: <input type="url" name="linkedin"><br><br>
+
+            GitHub URL: <input type="url" name="github"><br><br>
+
+            Profile Photo: <input type="file" name="photo" accept="image/*"><br><br>
+
+            Resume (PDF): <input type="file" name="resume" accept=".pdf" required><br><br>
+     
+
+     
+            <h3>Career Details</h3>
+
+            Career Objective:<br>
+            <textarea name="objective" rows="3" cols="40" required></textarea><br><br>
+
+            Highest Qualification: <input type="text" name="qualification" required><br><br>
+
+            College/University: <input type="text" name="college" required><br><br>
+
+            Graduation Year: <input type="number" name="gradyear" min="1950" max="2100" required><br><br>
+        
+
+      
+            <h3>Skills and Work Experience</h3>
+
+            Technical Skills:<br>
+            <textarea name="skills" rows="2" cols="40" required></textarea><br><br>
+
+            Programming Languages:<br>
+            <textarea name="languages" rows="2" cols="40" required></textarea><br><br>
+
+            Certifications (Optional):<br>
+            <textarea name="certificates" rows="2" cols="40"></textarea><br><br>
+
+            Experience (Years): <input type="number" name="experience" min="0" step="0.1"><br><br>
+
+            Last Company Worked At: <input type="text" name="company"><br><br>
+
+            Designation / Role: <input type="text" name="role"><br><br>
+      
+
+   
+            <h3>Additional Information</h3>
+
+            Languages Known:<br>
+            <textarea name="knownLanguages" rows="2" cols="40" required></textarea><br><br>
+
+            Hobbies:<br>
+            <textarea name="hobbies" rows="2" cols="40" required></textarea><br><br>
+
+            <input type="checkbox" name="agree" required>
+            I declare that the above information is accurate and complete.<br><br>
+   
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Clear All">
+
+    </form>
+
+</body>
+</html>
